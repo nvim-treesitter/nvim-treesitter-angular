@@ -1,11 +1,16 @@
-# module-template
-A repository template to create you own nvim-treesitter module !
+# nvim-treesitter-angular
 
-Please find below the list of things you will need to do to get going !
+Neovim treesitter integration with the Angular framework.
 
-# TODO (for you)
-After using this template, you will need to :
- - [ ] Rename every from `example-module` to the actual name of your module
- - [ ] Maybe rename the queries.
- - [ ] Send us a message here : [![Gitter](https://badges.gitter.im/nvim-treesitter/community.svg)](https://gitter.im/nvim-treesitter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
- - [ ] Code your module !
+## Install
+
+```vim
+Plug "nvim-treesitter/nvim-treesitter"
+Plug "nvim-treesitter/nvim-treesitter-angular"
+```
+
+## Includes
+
+- Syntax highlighting for inline templates
+- Syntax highlighting for inline styles
+- Angular specific HTML highlighting
