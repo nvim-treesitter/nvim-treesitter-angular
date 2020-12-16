@@ -11,8 +11,7 @@
                                 (pair
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "template"))
-                                  value: ((template_string) @injection
-                                          (#set! "lang" "html"))))))))
+                                  value: ((template_string) @html)))))))
 
 (export_statement
   decorator: (decorator
@@ -24,8 +23,7 @@
                                 (pair
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "template"))
-                                  value: ((template_string) @injection
-                                          (#set! "lang" "html")))))))
+                                  value: ((template_string) @html))))))
   declaration: (class_declaration))
 
 (class_declaration
@@ -39,8 +37,7 @@
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "styles"))
                                   value: (array
-                                           ((template_string) @injection
-                                           (#set! "lang" "css")))))))))
+                                           ((template_string) @css))))))))
 
 (export_statement
   decorator: (decorator
@@ -53,6 +50,5 @@
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "styles"))
                                   value: (array
-                                           ((template_string) @injection
-                                           (#set! "lang" "css"))))))))
+                                           ((template_string) @css)))))))
   declaration: (class_declaration))
