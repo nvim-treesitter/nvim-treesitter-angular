@@ -11,7 +11,8 @@
                                 (pair
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "template"))
-                                  value: ((template_string) @html)))))))
+                                  value: ((template_string) @html
+                                          (#offset! @html 0 1 0 -1))))))))
 
 (export_statement
   decorator: (decorator
@@ -23,7 +24,8 @@
                                 (pair
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "template"))
-                                  value: ((template_string) @html))))))
+                                  value: ((template_string) @html
+                                          (#offset! @html 0 1 0 -1)))))))
   declaration: (class_declaration))
 
 (class_declaration
@@ -37,7 +39,8 @@
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "styles"))
                                   value: (array
-                                           ((template_string) @css))))))))
+                                           ((template_string) @css
+                                            (#offset! @css 0 1 0 -1)))))))))
 
 (export_statement
   decorator: (decorator
@@ -50,5 +53,6 @@
                                   key: ((property_identifier) @_prop
                                         (#eq? @_prop "styles"))
                                   value: (array
-                                           ((template_string) @css)))))))
+                                           ((template_string) @css
+                                            (#offset! @css 0 1 0 -1))))))))
   declaration: (class_declaration))
