@@ -1,5 +1,7 @@
 # nvim-treesitter-angular
 
+**Deprecated: Angular support is included in nvim-treesitter.**
+
 Neovim treesitter integration with the Angular framework.
 
 ## Install
